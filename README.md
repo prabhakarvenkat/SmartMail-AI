@@ -132,6 +132,3 @@ The application will be accessible at `http://127.0.0.1:8000`.
   * **Memory for LLM:** Implement a more complex memory for the LLM (**Groq**) to remember past conversations or actions related to a sender/topic. \# Changed line 4
 
 <!-- end list -->
-
-```
-```
