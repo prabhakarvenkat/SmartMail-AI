@@ -1,5 +1,3 @@
-### `smartmail_ai/README.md` 
-
 # SmartMail AI Agent
 
 This project implements an Agentic AI system using Python, LangGraph, and FastAPI to automate email classification and response generation.
