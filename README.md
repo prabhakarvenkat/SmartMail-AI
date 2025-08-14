@@ -5,7 +5,7 @@ This project implements an Agentic AI system using Python, LangGraph, and FastAP
 ## Features
 
 - **Email Fetching:** Connects to an IMAP mailbox to retrieve unseen emails.
-- **AI Classification:** Utilizes an LLM (**Groq**/GPT-based) to classify emails into: # Changed line 1
+- **AI Classification:** Utilizes an LLM (**Groq**/GPT-based) to classify emails into: 
     - SPAM
     - Unwanted (non-spam but irrelevant)
     - Important for Business
@@ -45,7 +45,7 @@ smartmail\_ai/
 
 1.  **Clone the repository:**
     ```bash
-    git clone <repository_url>
+    git clone https://github.com/prabhakarvenkat/SmartMail-AI.git
     cd smartmail_ai
     ```
 
@@ -112,7 +112,7 @@ The application will be accessible at `http://127.0.0.1:8000`.
       * Defines the `AgentState` which holds information about the current email being processed.
       * Contains several "nodes":
           * `fetch_and_set_email`: Gets the next email from the batch.
-          * `classify_email`: Uses `langchain-groq` to call an LLM for classification. \# Changed line 2
+          * `classify_email`: Uses `langchain-groq` to call an LLM for classification. 
           * `generate_response`: Prepares the response content (currently fixed).
           * `send_email_response`: Sends the email using `email_client.py` and checks for duplicates via `database.py`.
           * `store_email_data`: Saves the email and its classification to the database.
@@ -122,11 +122,11 @@ The application will be accessible at `http://127.0.0.1:8000`.
 ## Optional Enhancements (Future Work)
 
   * **Advanced Rate Limiting:** Implement more sophisticated rate limiting using a dedicated library or a token bucket algorithm.
-  * **Dynamic Response Generation:** Use the LLM (**Groq**) to generate dynamic and personalized email replies based on the content of the "Important for Business" emails. \# Changed line 3
+  * **Dynamic Response Generation:** Use the LLM (**Groq**) to generate dynamic and personalized email replies based on the content of the "Important for Business" emails. 
   * **Error Handling and Logging:** More robust error handling and comprehensive logging for production environments.
   * **Asynchronous Email Operations:** Use `asyncio` with `aiomail` or similar libraries for non-blocking email I/O.
   * **Frontend Dashboard:** Develop a simple web frontend to visualize the dashboard data more interactively.
   * **More Sophisticated Authentication:** Integrate with OAuth providers (e.g., Google Sign-In) for better user management.
-  * **Memory for LLM:** Implement a more complex memory for the LLM (**Groq**) to remember past conversations or actions related to a sender/topic. \# Changed line 4
+  * **Memory for LLM:** Implement a more complex memory for the LLM (**Groq**) to remember past conversations or actions related to a sender/topic. 
 
 <!-- end list -->
